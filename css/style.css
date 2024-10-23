@@ -1,0 +1,68 @@
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'nd nd nd nd nd nd nd nd'
+    'bd bd hd hd hd hd cd cd'
+    'bd bd td td td td cd cd'
+    'sd sd sd sd hod hod hod hod'
+    'ad ad ad ad ad ad ad ad'
+    'fd fd fd fd fd fd fd fd'
+    ;
+}
+#navbarDiv{
+    grid-area: nd;
+}
+
+#navbarDiv{
+    grid-area: nd;
+}
+#headerDiv{
+    grid-area: hd;
+}
+#taglineDiv{
+    grid-area: td;
+}
+#skillsDiv{
+    grid-area: sd;
+}
+#hobbiesDiv{
+    grid-area: hod;
+}
+#aboutMeDiv{
+    grid-area:ad;
+}
+#footerDiv{
+    grid-area: fd;
+}
+#backDiv{
+    grid-area: bd;
+}
+#coverDiv{
+    grid-area: cd;
+}
+svg{
+    color: #1a1d20;
+    padding: 2px;
+}
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+  .grid-container{
+    display: grid;
+    grid-template-areas:
+    'nd nd nd nd nd nd nd nd'
+    'hd hd hd hd hd hd hd hd'
+    'td td td td td td td td'
+    'sd sd sd sd hod hod hod hod'
+    'ad ad ad ad ad ad ad ad'
+    'fd fd fd fd fd fd fd fd'
+    ;
+}
+}
